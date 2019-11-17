@@ -2,4 +2,4 @@ name: 'auto-scope'
 description: 'Automatically adds a scope in package.json using the repo's owner username for publishing on github package repository.'
 runs:
   using: 'docker'
-  main: 'Dockerfile'
+  image: 'Dockerfile'
