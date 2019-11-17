@@ -1,8 +1,6 @@
-#!/bin/bash
+#!/bin/sh -l
 
 set -eo pipefail
-
-cd $GITHUB_WORKSPACE
 
 echo "Identify Github owner (scope)"
 if [ -n "$SCOPE" ] && ! [ -z "$SCOPE" ]; then
