@@ -11,4 +11,4 @@ fi
 echo "Owner: $OWNER"
 
 echo "Scope the package in package.json"
-cat package.json | sed -i -e 's/"name": "\([a-z0-9]*\)"/"name": "@'$OWNER'\/\1"/' package.json
+cat package.json | sed -i -e 's/"name": "\([a-z0-9-]*\)"/"name": "@'$OWNER'\/\1"/' package.json
